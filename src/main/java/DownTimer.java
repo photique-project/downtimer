@@ -23,6 +23,7 @@ public class DownTimer {
 
     public void start() {
         while(true) {
+            printEmptyLine();
             printWelcomeMessage();
             printStartOption();
             String input = getStartOption();
@@ -56,8 +57,6 @@ public class DownTimer {
             if(isExit(input)) {
                 return;
             }
-
-            printEmptyLine();
         }
     }
 
