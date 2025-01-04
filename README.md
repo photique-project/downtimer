@@ -36,43 +36,55 @@ Step 5: 정상응답을 받고 다운타임이 종료되면 시작 시간과 종
 > 사용 방법
 
 
-실행환경
+### 실행환경
 - Java 19.0.2
 
 <br>
 
-전제조건
+### 전제조건
 - 서버의 헬스체크 엔드포인트 정상응답 코드 200
 - 서버의 헬스체크 엔드포인트 cors 허용
 
 <br>
 
-실행
-1. clone: 터미널을 통해서 해당 레포지토리를 clone합니다.
+### 실행
+1. **clone**: 터미널을 통해서 해당 레포지토리를 clone합니다.
 ```zsh
 git clone https://github.com/photique-project/downtimer.git
 ```
+
+<br>
+
 2. **build**: clone 받은 downtimer 디렉터리로 이동하고 빌드명령어를 입력합니다.
 ```zsh
 ./gradlew clean build
 ```
-3. 실행: downtimer/build/libs 디렉터리에서 jar 파일을 실행시킵니다. 
+
+<br>
+
+3. **실행**: downtimer/build/libs 디렉터리에서 jar 파일을 실행시킵니다. 
 ```zsh
 java -jar ./downtimer-1.0.0.jar
 ```
-4. 올바른 명령어와 헬스체크 엔드포인트 입력
+
+<br>
+
+4. **명령어 입력**: 출력옵션에 따라서 올바른 명령어와 헬스체크 엔드포인트 입력합니다.
 
 <img src="assets/start.png" width="300">
 
+<br><br>
 
-5. 서버 재배포
+
+5. **서버 재배포**: 아래와 같은 단계에서 서버 재배포를 진행합니다.
 
 <img src="assets/input.png" width="300">
 
-위와 같은 단계에서 서버 재배포 진행
+
+<br><br>
 
 
-6. 다운타임 확인
+6. **다운타임 확인**
 
 <img src="assets/result.png" width="300">
 
