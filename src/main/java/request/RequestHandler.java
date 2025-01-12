@@ -4,6 +4,7 @@ import dto.DowntimeResult;
 import io.Color;
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.Socket;
 import java.net.URL;
 import java.time.Duration;
 import java.time.LocalTime;
@@ -21,7 +22,7 @@ public class RequestHandler {
             return responseCode == HttpURLConnection.HTTP_OK;
 
         } catch (IOException e) {
-            throw new RuntimeException("Server Error");
+            return false;
         }
     }
 
