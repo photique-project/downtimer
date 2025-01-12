@@ -1,4 +1,13 @@
-# ⏱️ Downtimer - v1.0.0
+# ⏱️ Downtimer - v1.0.1
+
+```shell
+✅ 1.0.1 수정사항
+
+- 엔드포인터 입력 단계에서 0(종료) 입력 시 곧바로 종료되지 않는 오류 수정
+- docker 이미지 추가
+```
+
+<br><br>
 
 ## Introduction
 > 프로그램을 만든 이유와 배경 설명
@@ -47,7 +56,7 @@ Step 5: 정상응답을 받고 다운타임이 종료되면 시작 시간과 종
 
 <br>
 
-### 실행
+### 실행 - CLI
 1. **clone**: 터미널을 통해서 해당 레포지토리를 clone합니다.
 ```zsh
 git clone https://github.com/photique-project/downtimer.git
@@ -87,6 +96,22 @@ java -jar ./downtimer-1.0.0.jar
 6. **다운타임 확인**
 
 <img src="assets/result.png" width="300">
+
+<br><br>
+
+
+### 실행 - Docker
+1. **pull image**: 터미널을 통해서 downtimer 이미지를 내려받습니다
+```zsh
+docker pull photique/downtimer
+```
+
+<br>
+
+2. **run**: 받은 이미지를 실행시킵니다
+```zsh
+docker run -it -p 8080:8080 photique/downtimer
+```
 
 <br><br>
 

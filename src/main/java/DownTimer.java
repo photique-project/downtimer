@@ -36,7 +36,7 @@ public class DownTimer {
             printEndpointOptions();
             String endpoint = getEndpoint();
 
-            if(isExit(input)) {
+            if(isExit(endpoint)) {
                 return;
             }
 
