@@ -3,7 +3,7 @@ name: 도커허브 downtimer 배포
 on:
   push:
     branches:
-      - main
+      - "main"
 
 jobs:
   build-and-deploy:
